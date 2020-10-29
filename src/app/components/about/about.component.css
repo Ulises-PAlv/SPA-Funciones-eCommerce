@@ -1,0 +1,14 @@
+.title {
+    height: 45px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+span {
+    font-weight: bolder;
+}

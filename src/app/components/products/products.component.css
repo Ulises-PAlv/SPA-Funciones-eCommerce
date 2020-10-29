@@ -1,0 +1,32 @@
+
+.title {
+    height: 45px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.card-body img {
+    padding: 0 auto;
+    height: 200px;
+    width: 170px;
+    display: block;
+    margin: auto;
+}
+
+.cardsM {
+    margin: 20px 5px;
+    height: 605px;
+}
+
+h4 {
+    font-size: 18px;
+}

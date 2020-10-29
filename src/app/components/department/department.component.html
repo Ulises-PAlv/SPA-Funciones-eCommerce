@@ -1,0 +1,34 @@
+
+<div class="fast fadeIn">
+    <div class="container">
+        <div class="title bg-success mb-4">
+            <h2 style="color: white;">{{nameDep}}</h2>
+        </div>
+
+        <div class="jumbotron pt-1">
+            <div class="card-columns">
+                <div class="card fadeIn animated border p-2 cardsM"
+                *ngFor="let product of arrayProducts;">
+                    <div class="card-header">
+                        <h4 class="card-title">{{product.model}}</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="../../../{{ product.img }}" class="card-img animated fadeIn" alt="..." />
+                        <hr>
+
+                        <p class="card-text"><span>Department: {{product.department}}</span> </p>
+                        <p class="card-text"><span>Brand:</span> {{product.brand}}</p>
+
+                        <p class="card-text"><span>Description:</span></p>
+                            <p *ngFor="let description of product.description; let i = index"
+                            [ngClass]="{'d-none' : i}">{{description}} ...</p>
+                        <p class="card-text">Price: <span>$ {{product.price}}</span></p>
+                    </div>
+
+                    <button class="btn btn-outline-success btn-block col-12" (click)="navegar(product.id)">Ver más...</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
